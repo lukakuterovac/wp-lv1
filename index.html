@@ -21,10 +21,11 @@
           height="40"
           alt="Logo"
           class="logo-img"
+          aria-label="Logo Image"
         />
       </a>
-      <nav class="navbar" id="navigation-items">
-        <a href="#" class="active" id="home-link">Home</a>
+      <nav class="navbar" id="navigation-items" aria-label="Main Navigation">
+        <a href="#" class="active" id="home-link" aria-current="page">Home</a>
         <a href="#portfolio" id="portfolio-link">Portfolio</a>
         <a href="#about" id="about-link">About me</a>
         <a href="#testimonials" id="testimonials-link">Testimonials</a>
@@ -35,7 +36,7 @@
         <span id="closeHam">&#x2716;</span>
       </div>
     </header>
-    <div id="dropdown-menu">
+    <div id="dropdown-menu" aria-label="Main Navigation">
       <a href="#" class="dropdown-item">Home</a>
       <a href="#portfolio" class="dropdown-item">Portfolio</a>
       <a href="#about" class="dropdown-item">About me</a>
@@ -56,10 +57,16 @@
           <a href="#contact" class="btn">Get In Touch</a>
         </div>
         <img
+          sizes="(max-width: 768px) 80vw, 1200px"
+          srcset="
+            images/home/home-photo-small.png 459w,
+            images/home/home-photo.png       918w
+          "
           src="images/home/home-photo.png"
           width="918"
           height="731"
           alt="Photo"
+          aria-label="Photo of Ivan Ivanić"
         />
       </div>
       <div id="skills" class="skills">
@@ -75,6 +82,7 @@
               width="26"
               height="26"
               class="icon"
+              aria-label="Strategy Icon"
             />
             <h2>Strategy & Direction</h2>
             <p>
@@ -89,6 +97,7 @@
               height="26"
               alt="Tag Icon"
               class="icon"
+              aria-label="Tag Icon"
             />
             <h2>Branding & Logo</h2>
             <p>
@@ -103,6 +112,7 @@
               height="26"
               alt="Feather Icon"
               class="icon"
+              aria-label="Feather Icon"
             />
             <h2>UI & UX Design</h2>
             <p>
@@ -117,6 +127,7 @@
               height="26"
               alt="Code Icon"
               class="icon"
+              aria-label="Code Icon"
             />
             <h2>Webflow Development</h2>
             <p>
@@ -128,10 +139,17 @@
       </div>
       <div id="about" class="about">
         <img
+          sizes="(max-width: 768px) 80vw, 1200px"
+          srcset="
+            images/about/about-photo-small.png 407w,
+            images/about/about-photo.png       814w
+          "
           src="images/about/about-photo.png"
           width="814"
           height="996"
           alt="Photo"
+          loading="lazy"
+          aria-label="Photo of Ivan Ivanić"
         />
         <div>
           <div>About</div>
@@ -162,6 +180,7 @@
               height="33"
               alt="Dribble Logo"
               class="dribble-logo"
+              aria-label="Dribble Logo"
             />
             Visit My Dribble
           </a>
@@ -169,10 +188,17 @@
         <div class="projects">
           <div class="project">
             <img
+              sizes="(max-width: 768px) 80vw, 1200px"
+              srcset="
+                images/portfolio/project-1-small.png 278w,
+                images/portfolio/project-1.png       555w
+              "
               src="images/portfolio/project-1.png"
               width="555"
               height="400"
               alt="Project"
+              loading="lazy"
+              aria-label="Project Image"
             />
             <div class="project-info">
               <div class="bold">Ahuse</div>
@@ -193,10 +219,17 @@
           </div>
           <div class="project">
             <img
+              sizes="(max-width: 768px) 80vw, 1200px"
+              srcset="
+                images/portfolio/project-2-small.png 278w,
+                images/portfolio/project-2.png       556w
+              "
               src="images/portfolio/project-2.png"
               width="556"
               height="400"
               alt="Project"
+              loading="lazy"
+              aria-label="Project Image"
             />
             <div class="project-info">
               <div class="bold">App Dashboard</div>
@@ -217,10 +250,17 @@
           </div>
           <div class="project">
             <img
+              sizes="(max-width: 768px) 80vw, 1200px"
+              srcset="
+                images/portfolio/project-3-small.png 278w,
+                images/portfolio/project-3.png       555w
+              "
               src="images/portfolio/project-3.png"
               width="555"
               height="400"
               alt="Project"
+              loading="lazy"
+              aria-label="Project Image"
             />
             <div class="project-info">
               <div class="bold">Easy Rent</div>
@@ -268,6 +308,7 @@
                 width="75"
                 height="76"
                 alt="Author"
+                aria-label="Testimonial Author Photo"
               />
               <div class="author-info">
                 <div class="semi-bold">Dianne Russel</div>
@@ -295,6 +336,7 @@
                 width="75"
                 height="76"
                 alt="Author"
+                aria-label="Testimonial Author Photo"
               />
               <div class="author-info">
                 <div class="semi-bold">Kristin Watson</div>
@@ -322,6 +364,7 @@
                 width="75"
                 height="76"
                 alt="Author"
+                aria-label="Testimonial Author Photo"
               />
               <div class="author-info">
                 <div class="semi-bold">Kathryn Murphy</div>
@@ -341,26 +384,46 @@
           <div class="form-row">
             <div class="form-col">
               <label for="first-name">First name</label>
-              <input type="text" id="first-name" required />
+              <input
+                type="text"
+                id="first-name"
+                required
+                aria-label="Enter your first name"
+              />
             </div>
             <div class="form-col">
               <label for="last-name">Last name</label>
-              <input type="text" id="last-name" required />
+              <input
+                type="text"
+                id="last-name"
+                required
+                aria-label="Enter your last name"
+              />
             </div>
           </div>
           <div class="form-row">
             <div class="form-col">
               <label for="email">Email</label>
-              <input type="email" id="email" required />
+              <input
+                type="email"
+                id="email"
+                required
+                aria-label="Enter your email"
+              />
             </div>
             <div class="form-col">
               <label for="number">Phone number</label>
-              <input type="number" id="number" required />
+              <input
+                type="number"
+                id="number"
+                required
+                aria-label="Enter your phone number"
+              />
             </div>
           </div>
           <div class="form-col">
             <label for="topic">Choose a topic</label>
-            <select id="topic" required>
+            <select id="topic" required aria-label="Select a topic">
               <option disabled selected>Select one...</option>
               <option value="general">General Inquiry</option>
               <option value="project">Project Collaboration</option>
@@ -376,13 +439,16 @@
               rows="10"
               placeholder="Type your message..."
               required
+              aria-label="Type your message here"
             ></textarea>
           </div>
           <div class="form-label">
             <input type="checkbox" id="agree" required />
-            <label for="agree">I accept the terms</label>
+            <label for="agree" aria-label="Accept the terms">
+              I accept the terms
+            </label>
           </div>
-          <button class="btn" type="submit">Submit</button>
+          <button class="btn" type="submit" aria-label="Submit">Submit</button>
         </form>
       </div>
     </main>
@@ -395,13 +461,14 @@
             height="40"
             alt="Logo"
             class="logo-img"
+            aria-label="Logo Image"
           />
         </a>
-        <nav class="navbar">
-          <a href="#" class="active" id="home-link">Home</a>
-          <a href="#portfolio" id="portfolio-link">Portfolio</a>
-          <a href="#about" id="about-link">About me</a>
-          <a href="#testimonials" id="testimonials-link">Testimonials</a>
+        <nav class="navbar" aria-label="Bottom Navigation">
+          <a href="#" class="active" id="home-link-footer">Home</a>
+          <a href="#portfolio" id="portfolio-link-footer">Portfolio</a>
+          <a href="#about" id="about-link-footer">About me</a>
+          <a href="#testimonials" id="testimonials-link-footer">Testimonials</a>
         </nav>
         <div class="social">
           <a href="">
@@ -410,6 +477,7 @@
               width="65"
               height="65"
               alt="Facebook"
+              aria-label="Facebook Icon"
             />
           </a>
           <a href="">
@@ -418,6 +486,7 @@
               width="65"
               height="65"
               alt="Instagram"
+              aria-label="Instagram Icon"
             />
           </a>
           <a href="">
@@ -426,6 +495,7 @@
               width="65"
               height="65"
               alt="Twitter"
+              aria-label="Twitter Icon"
             />
           </a>
           <a href="">
@@ -434,6 +504,7 @@
               width="65"
               height="65"
               alt="LinkedIn"
+              aria-label="LinkedIn Icon"
             />
           </a>
         </div>

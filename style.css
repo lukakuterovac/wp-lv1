@@ -73,11 +73,6 @@ header {
   top: 0;
 }
 
-.logo-img {
-  width: 186px;
-  height: auto;
-}
-
 .navbar {
   display: flex;
   gap: 42px;
@@ -339,17 +334,13 @@ header {
 }
 
 .stars img {
-  height: 100%;
+  height: auto;
 }
 
 .author {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-.author img {
-  height: 64px;
 }
 
 .author-info {
@@ -407,6 +398,10 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: 16px;
+}
+
+.contact form .btn {
+  width: 100%;
 }
 
 /* Footer */

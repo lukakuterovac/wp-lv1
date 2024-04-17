@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       navbarLinks.forEach(function (link) {
         link.classList.remove("active");
       });
-      const linkId = this.id;
-      const elementsWithLinkId = document.querySelectorAll(`#${linkId}`);
+      const linkId = this.id.replace("-footer", "");
+      const elementsWithLinkId = document.querySelectorAll(`[id*="${linkId}"]`);
       elementsWithLinkId.forEach(function (element) {
         element.classList.add("active");
       });
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navbarLinks.forEach(function (link) {
         link.classList.remove("active");
       });
-      const homeLinks = document.querySelectorAll("#home-link");
+      const homeLinks = document.querySelectorAll(`[id*="home-link"]`);
       homeLinks.forEach(function (link) {
         link.classList.add("active");
       });
