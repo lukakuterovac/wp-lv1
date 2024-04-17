@@ -1,12 +1,338 @@
 <!DOCTYPE html>
 <html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ivana Ivanić</title>
-</head>
-<body>
-    <h1><?= "Hello LV1 task" ?></h1>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="header" class="header-sticky">
+      <a href="#" class="logo">
+        <img src="images/header/logo.png" alt="Logo" class="logo-img" />
+      </a>
+      <nav class="navbar" id="navigation-items">
+        <a href="#" class="active" id="home-link">Home</a>
+        <a href="#portfolio" id="portfolio-link">Portfolio</a>
+        <a href="#about" id="about-link">About me</a>
+        <a href="#testimonials" id="testimonials-link">Testimonials</a>
+      </nav>
+      <a href="#contact" class="btn" id="contact-btn">Contact Me</a>
+      <div class="hamburger">
+        <span id="openHam">&#9776;</span>
+        <span id="closeHam">&#x2716;</span>
+      </div>
+    </header>
+    <div id="dropdown-menu">
+      <a href="#" class="dropdown-item">Home</a>
+      <a href="#portfolio" class="dropdown-item">Portfolio</a>
+      <a href="#about" class="dropdown-item">About me</a>
+      <a href="#testimonials" class="dropdown-item">Testimonials</a>
+    </div>
+    <main>
+      <div id="home" class="home">
+        <div class="left">
+          <p class="semi-bold">Hey, I am John</p>
+          <h1 class="h1 bold">
+            I create <span class="primary bold">product design</span> and brand
+            experience
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+        <img src="images/home/home-photo.png" alt="Photo" />
+      </div>
+      <div id="skills" class="skills">
+        <div class="info">
+          <p>My Skills</p>
+          <h1>My Expertise</h1>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="images/skills/strategy.png"
+              alt="Strategy Icon"
+              class="icon"
+            />
+            <h2>Strategy & Direction</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/skills/tag.png" alt="Tag Icon" class="icon" />
+            <h2>Branding & Logo</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="images/skills/feather.png"
+              alt="Feather Icon"
+              class="icon"
+            />
+            <h2>UI & UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/skills/code.png" alt="Code Icon" class="icon" />
+            <h2>Webflow Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="about">
+        <img src="images/about/about-photo.png" alt="Photo" />
+        <div>
+          <div>About</div>
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            varius faucibus massa sollicitudin amet augue. Nibh metus a semper
+            purus mauris duis. Lorem eu neque, tristique quis duis. Nibh
+            scelerisque ac adipiscing velit non nulla in amet pellentesque.
+            <br />
+            <br />
+            Sit turpis pretium eget maecenas. Vestibulum dolor mattis
+            consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem
+            mi a, euismod risus r.
+          </p>
+        </div>
+      </div>
+      <div id="portfolio" class="portfolio">
+        <div class="portfolio-top">
+          <div>
+            <p>Recent Projects</p>
+            <h1>My Portfolio</h1>
+          </div>
+          <a href="https://dribbble.com/" class="dribble-btn">
+            <img
+              src="images/portfolio/dribble-icon.png"
+              alt="Dribble Logo"
+              class="dribble-logo"
+            />
+            Visit My Dribble
+          </a>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <img src="images/portfolio/project-1.png" alt="Project" />
+            <div class="project-info">
+              <div class="bold">Ahuse</div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </div>
+              <a href="https://dribbble.com/" class="semi-bold">
+                View In Dribble
+                <img src="images/portfolio/arrow.png" alt="Arrow" />
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/portfolio/project-2.png" alt="Project" />
+            <div class="project-info">
+              <div class="bold">App Dashboard</div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </div>
+              <a href="https://dribbble.com/" class="semi-bold">
+                View In Dribble
+                <img src="images/portfolio/arrow.png" alt="Arrow" />
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/portfolio/project-3.png" alt="Project" />
+            <div class="project-info">
+              <div class="bold">Easy Rent</div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </div>
+              <a href="https://dribbble.com/" class="semi-bold">
+                View In Dribble
+                <img
+                  src="images/portfolio/arrow.png"
+                  alt="Arrow"
+                  class="arrow"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="testimonials" class="testimonials">
+        <div>
+          <p>Clients Feedback</p>
+          <h1>Customer testimonials</h1>
+        </div>
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <div class="stars">
+              <img src="images/testimonials/stars.png" alt="Stars" />
+            </div>
+            <div class="review">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra.
+            </div>
+            <div class="author">
+              <img src="images/testimonials/testimonial-1.png" alt="Author" />
+              <div class="author-info">
+                <div class="semi-bold">Dianne Russel</div>
+                <div>Starbucks</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <img src="images/testimonials/stars.png" alt="Stars" />
+            </div>
+            <div class="review">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra.
+            </div>
+            <div class="author">
+              <img src="images/testimonials/testimonial-2.png" alt="Author" />
+              <div class="author-info">
+                <div class="semi-bold">Kristin Watson</div>
+                <div>Louis Vuitton</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <img src="images/testimonials/stars.png" alt="Stars" />
+            </div>
+            <div class="review">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra.
+            </div>
+            <div class="author">
+              <img src="images/testimonials/testimonial-3.png" alt="Author" />
+              <div class="author-info">
+                <div class="semi-bold">Kathryn Murphy</div>
+                <div>McDonald's</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="text">
+          <div>Get In Touch</div>
+          <div class="h2">Contact Me</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+        <form method="get">
+          <div class="form-row">
+            <div class="form-col">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" required />
+            </div>
+            <div class="form-col">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-col">
+              <label for="number">Phone number</label>
+              <input type="number" id="number" required />
+            </div>
+          </div>
+          <div class="form-col">
+            <label for="topic">Choose a topic</label>
+            <select id="topic" required>
+              <option disabled selected>Select one...</option>
+              <option value="general">General Inquiry</option>
+              <option value="project">Project Collaboration</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-col">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="10"
+              placeholder="Type your message..."
+              required
+            ></textarea>
+          </div>
+          <div class="form-label">
+            <input type="checkbox" id="agree" required />
+            <label for="agree">I accept the terms</label>
+          </div>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="section">
+        <a href="#" class="logo">
+          <img src="images/header/logo.png" alt="Logo" class="logo-img" />
+        </a>
+        <nav class="navbar">
+          <a href="#" class="active" id="home-link">Home</a>
+          <a href="#portfolio" id="portfolio-link">Portfolio</a>
+          <a href="#about" id="about-link">About me</a>
+          <a href="#testimonials" id="testimonials-link">Testimonials</a>
+        </nav>
+        <div class="social">
+          <a href="">
+            <img src="images/footer/facebook.png" alt="Facebook" />
+          </a>
+          <a href="">
+            <img src="images/footer/instagram.png" alt="Instagram" />
+          </a>
+          <a href="">
+            <img src="images/footer/twitter.png" alt="Twitter" />
+          </a>
+          <a href="">
+            <img src="images/footer/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="section">
+        <div>
+          Made with 💖 by
+          <span>
+            <a href="https://github.com/lukakuterovac" class="github-link">
+              lukakuterovac
+            </a>
+          </span>
+        </div>
+        <div class="links">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Service</a>
+          <a href="">Cookie Settings</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
