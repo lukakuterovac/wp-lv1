@@ -140,7 +140,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 85px 150px;
+  padding: 128px 64px;
 }
 
 .left {
@@ -152,6 +152,7 @@ header {
 
 .home img {
   width: 50%;
+  height: auto;
 }
 
 .home .left p {
@@ -177,13 +178,12 @@ header {
 
 /* Skills */
 .skills {
-  padding: 85px 150px;
-  padding-bottom: 200px;
+  padding: 128px 64px;
 }
 
 .cards {
   display: flex;
-  gap: 42px;
+  gap: 32px;
 }
 
 .card {
@@ -207,7 +207,7 @@ header {
 
 /* About */
 .about {
-  padding: 85px 150px;
+  padding: 128px 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,7 +224,7 @@ header {
 
 /* Portfolio */
 .portfolio {
-  padding: 85px 150px;
+  padding: 128px 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,7 +306,7 @@ header {
 
 /* Testimonials */
 .testimonials {
-  padding: 85px 150px;
+  padding: 128px 64px;
 
   background-color: var(--bg-shade);
   display: flex;
@@ -318,7 +318,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 32px;
+  gap: 16px;
 }
 
 .testimonial-card {
@@ -455,6 +455,27 @@ footer hr {
   width: 100%;
   margin-top: 80px;
   margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    gap: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+  }
+  .testimonial-card {
+    width: fit-content;
+  }
+
+  footer .social {
+    gap: 4px;
+  }
 }
 
 /* Tablet */
